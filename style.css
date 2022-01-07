@@ -27,7 +27,10 @@ header {
     color: #f0482a;
     font-family: var(--fonte2);
     text-align: center;
-    font-size: 1.5vw;;
+    font-size: 1.5vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.596);
+    
+ 
 }
 
 header > h1 {
@@ -52,44 +55,66 @@ a:hover {
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 50px;
-
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 60px;
+    line-height: 2em;    
     font-family: var(--fonte3);
-    font-size: 2vw;
+   /* font-size: 2vw;*/
 
 }
 
-section.normal1 {
+section.normal1 {  
     background-color: #3332ff;
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.normal2 {
     background-color: #f0482a;
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
-section.normal3 {
+section.normal3 {    
     background-color: #FAB600;
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.imagem {
     background-color: rgb(39, 36, 36);
     color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.664) ;
 }
 
 section.imagem > p {
-    display: block;
-    padding: 20px;
-    width: 350px;
-    background-color: rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.384);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#img01 {
+    background-image: url("imagens/caminhar.jpg");
+    
+}
+
+section#img02 {
+    background-image: url("imagens/recomeco.jpg");
+   
 }
 
 footer {
+    font-size: 2vw;
+    height: 5vw;
+    text-align: center;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
     background-color: #3332ff;
     color: white;
     text-align: center;
@@ -105,3 +130,36 @@ footer a {
 footer a:hover {
     color: #f0482a;
 }
+
+@media  screen and (max-width: 550px) {
+    header {
+        font-size: 3vw;
+    }
+    header > h1 {
+        font-size: 10vw;
+    }
+    header a {
+        font-size: 3vw;
+    }
+    section {
+        font-size: 3.5vw;
+    }
+    section.imagem > p {  
+        display: flex;  
+        flex-direction: column;      
+        width: 230px;
+    }
+}    
+
+@media screen and (min-width: 700px){
+    section {
+        font-size: 2vw;
+    }
+    section.imagem > p { 
+        display: flex;  
+        flex-direction: column;
+        width: 550px;
+
+    }
+}
+    
