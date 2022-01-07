@@ -111,7 +111,6 @@ section#img02 {
 
 footer {
     font-size: 2vw;
-    height: 5vw;
     text-align: center;
     padding-top: 2.5vw;
     padding-bottom: 2.5vw;
@@ -160,6 +159,11 @@ footer a:hover {
         flex-direction: column;
         width: 550px;
 
+    }
+    footer {        
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size: 1vw;
     }
 }
     
