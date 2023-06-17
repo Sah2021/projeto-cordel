@@ -1,101 +1,138 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
+    --fonte2: 'Special Elite', cursive; 
     --fonte3: 'Sriracha', cursive;
-}
+    }
 
-* {
+*{
     margin: 0px;
-    padding: 0px;
-    font-size: 1em;
+    padding:  0px;
+
 }
 
 html, body {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     min-height: 100vh;
-    background-color: darkgray;
-    font-family: var(--fonte1);
+    background-color: #353535;
+    font-family: var(--fonte1);   
 }
 
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
+    background-color: #f7b590;
+    color: #f0482a;
+    font-family: var(--fonte2);
+    text-align: center; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+ 
 }
 
-header > h1 {
-    padding-top: 50px;
+header > h1 {     
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.596);
+    padding-top: 30px;
+    font-size: min(80px, 10vw);
     font-variant: small-caps;
-    font-family: var(--fonte2);
-    font-size: 10vw;
 }
 
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
-header a, footer a {
-    color: white;
+header a {
+    color: #3332ff;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 2.5vw;
 }
 
-header a:hover, footer a:hover {
-    text-decoration: underline;
+a:hover {
+    color: white;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    line-height: 2em;    
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: min(30px, 4vw);
 }
 
-section > p {
-    padding-bottom: 2em;
+section.normal1 {  
+    background-color: #3332ff;
+    color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
-section.normal {
-    background-color: white;
-    color: black;
+section.normal2 {
+    background-color: #f0482a;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+section.normal3 {    
+    background-color: #FAB600;
+    color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.imagem {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(39, 36, 36);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.664) ;
 }
 
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0.384);
     text-shadow: 1px 1px 0px black;
+    width: 60%;
+
 }
 
 section#img01 {
-    background-image: url('../imagens/background001.jpg');
-    background-position: right center;
+    background-image: url("imagens/caminhar.jpg");
     
 }
 
 section#img02 {
-    background-image: url('../imagens/background002.jpg');
-    
+    background-image: url("imagens/recomeco.jpg");
+   
 }
 
 footer {
-    background-color: black;
+    font-size: min(20px, 3vw);
+    text-align: center;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    background-color: #3332ff;
     color: white;
     text-align: center;
-    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+footer a {
+    color: #FAB600;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+footer a:hover {
+    color: #f0482a;
+}
+
