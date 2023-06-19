@@ -104,12 +104,12 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url("imagens/caminhar.jpg");
+    background-image: url("../imagens/caminhar.jpg");
     
 }
 
 section#img02 {
-    background-image: url("imagens/recomeco.jpg");
+    background-image: url("../imagens/recomeco.jpg");
    
 }
 
